@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Estándares contra la Explotación y Abuso Sexual Infantil (CSAE) – Anonymous Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <style>
+    :root {
+      --bg: #f7f7fb;
+      --card: #ffffff;
+      --text: #1c1c1c;
+      --muted: #6b7280;
+      --primary: #2563eb;
+      --primary-weak: #e8efff;
+      --border: #e5e7eb;
+      --success: #059669;
+      --danger: #dc2626;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0b0f;
+        --card: #121218;
+        --text: #f4f6fb;
+        --muted: #a3a7b2;
+        --primary: #66a0ff;
+        --primary-weak: #0f1a33;
+        --border: #242735;
+      }
+    }
+    * { box-sizing: border-box }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: radial-gradient(1200px 800px at 20% -10%, var(--primary-weak), transparent 60%),
+                  radial-gradient(900px 600px at 120% 10%, var(--primary-weak), transparent 50%),
+                  var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header.hero {
+      display: grid;
+      gap: 12px;
+      padding: 32px 0 8px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      font-size: 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--muted);
+      width: fit-content;
+    }
+    .badge .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--success) 20%, transparent);
+    }
+    h1 {
+      font-size: clamp(26px, 4.5vw, 36px);
+      line-height: 1.2;
+      margin: 0;
+      letter-spacing: -0.02em;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin: 0 0 8px 0;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    nav.toc {
+      margin: 18px 0 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    nav.toc a {
+      text-decoration: none;
+      color: var(--primary);
+      padding: 8px 12px;
+      border-radius: 10px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      transition: transform .05s ease;
+    }
+    nav.toc a:hover { transform: translateY(-1px) }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media (min-width: 820px) {
+      .grid { grid-template-columns: 1fr 1fr }
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px 20px;
+      box-shadow: 0 1px 0 rgba(0,0,0,.03);
+    }
+    .card h2, .card h3 { margin-top: 4px }
+    h2 {
+      font-size: clamp(18px, 3.6vw, 22px);
+      margin: 0 0 8px 0;
+    }
+    h3 { font-size: 16px; margin: 12px 0 4px }
+    ul { margin: 8px 0 0 18px; padding: 0; }
+    li { margin: 6px 0 }
+    a { color: var(--primary) }
+    .kbd {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      background: color-mix(in srgb, var(--primary) 10%, var(--card));
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 8px;
+      font-size: 90%;
+    }
+    .callout {
+      border-left: 4px solid var(--primary);
+      background: color-mix(in srgb, var(--primary) 6%, var(--card));
+      padding: 12px 14px;
+      border-radius: 12px;
+      margin: 10px 0;
+    }
+    footer {
+      color: var(--muted);
+      font-size: 13px;
+      padding: 24px 0 12px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <span class="badge" aria-label="Documento oficial publicado">
+        <span class="dot" aria-hidden="true"></span>
+        Estándares oficiales — CSAE
+      </span>
+      <h1>Estándares contra la Explotación y Abuso Sexual Infantil (CSAE)</h1>
+      <p class="subtitle">Anonymous Chat</p>
+      <p class="meta">Última actualización: <strong>25 de agosto de 2025</strong></p>
+      <nav class="toc" aria-label="Índice de secciones">
+        <a href="#compromiso">Compromiso</a>
+        <a href="#prohibido">Contenido y conductas prohibidas</a>
+        <a href="#prevencion">Prevención y detección</a>
+        <a href="#respuesta">Respuesta e informes</a>
+        <a href="#herramientas">Herramientas de usuario</a>
+        <a href="#gobernanza">Gobernanza y capacitación</a>
+        <a href="#datos">Protección de datos</a>
+        <a href="#contacto">Contacto designado</a>
+      </nav>
+    </header>
+
+    <section class="grid">
+      <article class="card" id="compromiso">
+        <h2>Compromiso</h2>
+        <p>Anonymous Chat prohíbe estrictamente todo contenido, conducta o actividad relacionada con la explotación y el abuso sexual infantil (CSAE), incluido el material de abuso sexual infantil (CSAM) y la captación (“grooming”). Operamos con tolerancia cero y priorizamos la seguridad de niñas, niños y adolescentes.</p>
+      </article>
+
+      <article class="card" id="prohibido">
+        <h2>Contenido y conductas prohibidas</h2>
+        <ul>
+          <li>Publicar, solicitar, distribuir, enlazar o almacenar CSAM/CSAE en cualquier formato (imagen, audio, video, texto, enlaces).</li>
+          <li>Solicitar imágenes íntimas de menores o fomentar actividades sexuales con menores.</li>
+          <li>Contactar, engañar o coaccionar a menores con fines sexuales (grooming).</li>
+          <li>Compartir información que facilite la explotación de menores.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="prevencion">
+        <h2>Prevención y detección</h2>
+        <ul>
+          <li><strong>Moderación:</strong> combinación de revisión automatizada y humana; priorizamos señales de riesgo y reportes de usuarios.</li>
+          <li><strong>Detección proactiva:</strong> filtros de texto/archivos y controles de reputación en enlaces. Contenido sospechoso se bloquea, se revisa y se reporta cuando aplica.</li>
+          <li><strong>Limitación de reintentos:</strong> mecanismos contra evasión de filtros y abuso repetido.</li>
+          <li><strong>Protecciones adicionales:</strong> límites de envío, bloqueo de perfiles, silenciamiento y herramientas de denuncia visibles en la app.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="respuesta">
+        <h2>Respuesta e informes</h2>
+        <ul>
+          <li><strong>Acción inmediata:</strong> bloqueo/suspensión de cuentas, eliminación o bloqueo de contenido, conservación segura de evidencias y registros.</li>
+          <li><strong>Escalamiento:</strong> las denuncias con indicios de CSAE se remiten con prontitud a las autoridades competentes conforme a las leyes locales aplicables.</li>
+          <li><strong>Cooperación legal:</strong> respondemos a órdenes legales válidas y solicitudes de autoridades competentes.</li>
+          <li><strong>Retención mínima:</strong> conservamos solo lo necesario para investigación legal y de seguridad, conforme a la ley y a nuestra política de privacidad.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="herramientas">
+        <h2>Herramientas de usuario</h2>
+        <ul>
+          <li><span class="kbd">Reportar → Seguridad infantil (CSAE)</span> para denunciar contenido o conductas sospechosas.</li>
+          <li>Bloquear y silenciar para cortar comunicación inmediatamente.</li>
+          <li>Centro de ayuda con guías de seguridad y recursos externos.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="gobernanza">
+        <h2>Gobernanza y capacitación</h2>
+        <ul>
+          <li><strong>Políticas internas:</strong> procedimientos de revisión, cadena de custodia y auditoría.</li>
+          <li><strong>Capacitación:</strong> equipo entrenado para identificar y gestionar CSAE con enfoque de mínimo impacto y preservación de evidencia.</li>
+          <li><strong>Revisión periódica:</strong> mejoras continuas de señales, flujos de reporte y controles.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="datos">
+        <h2>Protección de datos</h2>
+        <ul>
+          <li>Tratamiento de datos conforme a la normativa aplicable y a nuestra política de privacidad.</li>
+          <li>Principios de minimización, seguridad y acceso restringido.</li>
+        </ul>
+      </article>
+
+      <article class="card callout" id="contacto">
+        <h2>Contacto designado</h2>
+        <p>Si necesitas contactar a nuestro punto de contacto designado sobre CSAE/CSAM:</p>
+        <p>Correo: <a href="mailto:danielgamas83@gmail.com">danielgamas83@gmail.com</a><br>
+           Idioma: Español (apoyo en Inglés)<br>
+           Disponibilidad: Días hábiles, con priorización de casos urgentes.</p>
+        <p>Dentro de la app: usa <span class="kbd">Reportar → Seguridad infantil (CSAE)</span>.<br>
+           En emergencias, contacta a las autoridades locales inmediatamente.</p>
+      </article>
+    </section>
+
+    <footer>
+      © 2025 Anonymous Chat — Estándares de seguridad (CSAE)
+    </footer>
+  </div>
+</body>
+</html>
